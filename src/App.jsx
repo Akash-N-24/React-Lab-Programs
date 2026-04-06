@@ -4,6 +4,7 @@ import Demo from './components/Demo';
 import Exp1 from './components/Exp1';
 import Exp2 from './components/Exp2';
 import Exp3 from './components/Exp3';
+import Exp4 from './components/Exp4'; 
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Demo />
       <Exp1 />
       <Exp2 />  
-      <Exp3 />  
+      <Exp3 /> 
+      <Exp4 />  
     </div>
   );
 }
