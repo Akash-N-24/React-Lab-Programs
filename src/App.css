@@ -1,0 +1,144 @@
+/* =========================================
+   Reset and Base Styles
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Using a modern sans-serif stack */
+  font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+  background-color: #f4f7f6; /* Softer, modern background */
+  color: #333;
+}
+
+/* =========================================
+   Main App Container
+========================================= */
+.App {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* =========================================
+   Main App Typography
+========================================= */
+/* Targets ONLY the direct h1 of the App */
+.App > h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Targets ONLY the direct p of the App */
+.App > p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   Component "Cards" (Demo & Exp1)
+========================================= */
+/* Automatically targets the outer divs of your Demo and Exp1 components */
+.App > div {
+  background: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-top: 5px solid #34bbcd; /* Your original teal as a beautiful top accent */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for the cards */
+.App > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Component Typography */
+.App > div h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.App > div p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   Form and Input Styling (For Exp1)
+========================================= */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px 15px;
+  font-size: 1rem;
+  border: 2px solid #e1e5e8;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+/* Beautiful focus effect when typing */
+input[type="text"]:focus {
+  border-color: #34bbcd;
+  box-shadow: 0 0 0 4px rgba(52, 187, 205, 0.15);
+}
+
+/* Emphasizes the "You typed:" output text */
+.App > div p:last-child {
+  background-color: #f8fcfc;
+  padding: 15px;
+  border-left: 4px solid #34bbcd;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+
+/* =========================================
+   Responsive Design (Mobile Devices)
+========================================= */
+@media (max-width: 768px) {
+  .App {
+    padding: 40px 15px;
+    gap: 20px;
+  }
+  
+  .App > h1 {
+    font-size: 2.2rem;
+  }
+  
+  .App > div {
+    padding: 25px;
+  }
+}
