@@ -5,13 +5,25 @@ import Exp1 from './components/Exp1';
 import Exp2 from './components/Exp2';
 import Exp3 from './components/Exp3';
 import Exp4 from './components/Exp4';
+import Exp5 from './components/Exp5';
+import Exp6 from './components/Exp6';
+import Exp7 from './components/Exp7';
+import Exp8 from './components/Exp8';
+import Exp9 from './components/Exp9';
+import Exp10 from './components/Exp10';
 
 const experiments = [
   { id: 'demo', title: 'Demo Component', concept: 'Component structure', description: 'A simple functional component used as the starting point.' },
   { id: 'exp1', title: 'Experiment 1', concept: 'State + controlled input', description: 'Reads text from an input and renders the current state.' },
   { id: 'exp2', title: 'Experiment 2', concept: 'Props + components', description: 'Passes values into reusable Header and Footer components.' },
   { id: 'exp3', title: 'Experiment 3', concept: 'Events + state', description: 'Builds a configurable counter with increase, decrease and reset actions.' },
-  { id: 'exp4', title: 'Experiment 4', concept: 'Lists + conditional rendering', description: 'Implements a functional To-Do list using state, array mapping and events.' }
+  { id: 'exp4', title: 'Program 4', concept: 'Lists + conditional rendering', description: 'Functional To-Do list with add, complete and delete operations.' },
+  { id: 'exp5', title: 'Program 5', concept: 'Composition + props', description: 'FigureList and BasicFigure components with dynamic image management.' },
+  { id: 'exp6', title: 'Program 6', concept: 'Forms + validation', description: 'Name, email and password form with validation and show-password toggle.' },
+  { id: 'exp7', title: 'Program 7', concept: 'Profile card + styling', description: 'ProfileCard using external CSS, inline styling and props.' },
+  { id: 'exp8', title: 'Program 8', concept: 'Reminder + filtering', description: 'Due dates, completion status and all/completed/pending filters.' },
+  { id: 'exp9', title: 'Program 9', concept: 'React Router', description: 'Home, About and Contact navigation using react-router-dom.' },
+  { id: 'exp10', title: 'Program 10', concept: 'Class lifecycle + API', description: 'componentDidMount, componentDidUpdate and external API data.' }
 ];
 
 function App() {
@@ -23,6 +35,12 @@ function App() {
       case 'exp2': return <Exp2 />;
       case 'exp3': return <Exp3 />;
       case 'exp4': return <Exp4 />;
+      case 'exp5': return <Exp5 />;
+      case 'exp6': return <Exp6 />;
+      case 'exp7': return <Exp7 />;
+      case 'exp8': return <Exp8 />;
+      case 'exp9': return <Exp9 />;
+      case 'exp10': return <Exp10 />;
       default: return null;
     }
   };
