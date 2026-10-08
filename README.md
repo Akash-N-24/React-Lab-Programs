@@ -2,25 +2,20 @@
 
 A practical React laboratory repository developed during B.E. Computer Science and Engineering coursework.
 
-This repository started as a simple **"My First React App"** and now presents the same lab practice as a small, organized React learning portfolio.
+This repository started as a simple **My First React App** and now presents the same lab practice as a small, organized React learning portfolio.
 
 ## What is demonstrated?
-
-The current exercises cover core React concepts through small working programs:
 
 | Experiment | Concept | Demonstration |
 |---|---|---|
 | Demo | Functional component | Basic reusable component structure |
-| Experiment 1 | State + controlled input | `useState`, input events and live rendering |
-| Experiment 2 | Props + components | Passing data into Header and Footer components |
+| Experiment 1 | State + controlled input | useState, input events and live rendering |
+| Experiment 2 | Props + components | Passing values into Header and Footer |
 | Experiment 3 | State + events | Configurable counter with increase, decrease and reset |
 | Experiment 4 | Lists + conditional rendering | Functional To-Do list with add, complete and delete |
 
-## Why keep this repository?
+## Learning progression
 
-This is intentionally a **learning/lab repository**, not a claim of being a major production project.
-
-It records the progression from:
 ```
 JSX
   ↓
@@ -35,7 +30,7 @@ Events and controlled inputs
 List rendering and conditional UI
 ```
 
-That makes it useful as a coursework reference and as evidence of hands-on React practice.
+The repository records hands-on React practice and is intentionally presented as a learning/lab repository rather than a production application.
 
 ## Technology
 
@@ -43,10 +38,10 @@ That makes it useful as a coursework reference and as evidence of hands-on React
 - JavaScript / JSX
 - Vite
 - Functional components
-- React `useState`
+- React useState
 - CSS
 
-## Project structure
+## Structure
 
 ```
 src/
@@ -69,27 +64,16 @@ npm install
 npm run dev
 ```
 
-For a production build:
+Build:
 
 ```bash
 npm run build
 ```
 
-## Academic note
+## Viva revision
 
-The repository preserves the original laboratory exercises while improving their presentation with an experiment selector and concept overview. The purpose is learning and revision rather than production deployment.
+See [LAB_NOTES.md](LAB_NOTES.md) for short explanations and common viva questions.
 
 ## Future learning path
 
-The natural next steps after these exercises are:
-
-- React Router
-- reusable form components
-- API integration with `fetch`
-- component composition
-- Context API
-- custom hooks
-- backend integration
-- authentication
-- deployment
-
+React Router → API integration → reusable forms → Context API → custom hooks → backend integration → authentication → deployment.
