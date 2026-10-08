@@ -1,59 +1,35 @@
-# React Lab Portfolio — VTU 2022 Scheme
+# React Lab Programs — VTU BCSL657B
 
-A practical React laboratory repository developed during B.E. Computer Science and Engineering coursework.
+A complete **React.js laboratory portfolio** for the VTU 2022 Scheme, developed as part of B.E. Computer Science and Engineering coursework.
 
-This repository started as a simple **My First React App** and now presents the same lab practice as a small, organized React learning portfolio.
+The repository contains all **10 BCSL657B React laboratory programs**, organized as individual demonstrations and presented through a single interactive lab portfolio.
 
-## What is demonstrated?
+## 🧪 Programs
 
-| Experiment | Concept | Demonstration |
+| No. | Concept | What it demonstrates |
 |---|---|---|
-| Demo | Functional component | Basic reusable component structure |
-| Experiment 1 | State + controlled input | useState, input events and live rendering |
-| Experiment 2 | Props + components | Passing values into Header and Footer |
-| Experiment 3 | State + events | Configurable counter with increase, decrease and reset |
-| Program 4 | Lists + conditional rendering | Functional To-Do list with add, complete and delete |
-| Program 5 | Component composition + props | FigureList / BasicFigure image gallery |
-| Program 6 | Forms + validation | Name, email, password validation and show-password toggle |
-| Program 7 | Styling + props | Responsive ProfileCard with external and inline styling |
-| Program 8 | State + filtering | Reminder list with due dates and status filters |
-| Program 9 | Routing | Home, About and Contact using react-router-dom |
-| Program 10 | Class lifecycle + API | componentDidMount, componentDidUpdate and external API data |
+| 1 | State & controlled input | `useState`, input events and live rendering |
+| 2 | Props & components | Parent-to-child data flow |
+| 3 | Counter | State, events, reset and custom step |
+| 4 | To-Do list | Lists, state, add/delete and conditional rendering |
+| 5 | Figure gallery | Component composition, props and dynamic items |
+| 6 | Form validation | Controlled forms, validation and password visibility |
+| 7 | Profile card | External CSS, inline styling, props and responsive UI |
+| 8 | Reminder app | State management, completion and filtering |
+| 9 | React Router | Routes, navigation and active links |
+| 10 | Class lifecycle & API | `componentDidMount`, `componentDidUpdate` and API data |
 
-## Learning progression
-
-```
-JSX
-  ↓
-Components
-  ↓
-Props
-  ↓
-State
-  ↓
-Events and controlled inputs
-  ↓
-List rendering and conditional UI
-```
-
-The repository records hands-on React practice and is intentionally presented as a learning/lab repository rather than a production application.
-
-## Complete BCSL657B program set
-
-The repository now contains Programs 1–10 from the BCSL657B React laboratory sequence. Programs 1–4 are the original exercises that were already present; Programs 5–10 have been added as separate components so each exercise can be studied and demonstrated independently.
-
-The React Router demonstration is supported by a global BrowserRouter configuration, while the lifecycle/API exercise uses a class component as required by the laboratory objective.
-
-## Technology
+## 🛠️ Technology
 
 - React
 - JavaScript / JSX
 - Vite
-- Functional components
-- React useState
+- React Hooks
+- React Router
 - CSS
+- REST API integration
 
-## Structure
+## 📁 Structure
 
 ```
 src/
@@ -66,26 +42,30 @@ src/
     ├── Exp2.jsx
     ├── Exp3.jsx
     ├── Exp4.jsx
-    └── ToDoFunction.css
+    ├── Exp5.jsx
+    ├── Exp6.jsx
+    ├── Exp7.jsx
+    ├── Exp8.jsx
+    ├── Exp9.jsx
+    ├── Exp10.jsx
+    └── ProfileCard.css
 ```
 
-## Run locally
+## ▶️ Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build:
+Production build:
 
 ```bash
 npm run build
 ```
 
-## Viva revision
+## 🎓 Purpose
 
-See [LAB_NOTES.md](LAB_NOTES.md) for short explanations and common viva questions.
+This repository is maintained as a practical record of React laboratory work, with each program kept understandable for **learning, demonstration and viva preparation**.
 
-## Future learning path
-
-React Router → API integration → reusable forms → Context API → custom hooks → backend integration → authentication → deployment.
+See [LAB_NOTES.md](LAB_NOTES.md) for quick revision notes and common viva questions.
